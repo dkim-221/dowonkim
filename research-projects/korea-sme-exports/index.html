@@ -67,10 +67,6 @@
         margin: 0;
       }
 
-      li + li {
-        margin-top: 6px;
-      }
-
       a {
         text-decoration: none;
         color: var(--accent);
@@ -89,13 +85,24 @@
         font-size: 0.9rem;
         color: var(--muted);
       }
+
+      .paper {
+        margin-top: 8px;
+        padding-top: 4px;
+      }
+
+      .paper + .paper {
+        margin-top: 14px;
+        border-top: 1px solid var(--border);
+        padding-top: 12px;
+      }
     </style>
   </head>
   <body>
     <main class="page">
       <div class="back">
         <a href="https://dkim-221.github.io/dowonkim/">
-          ← Back to home
+          ← Back to Dowon Kim homepage
         </a>
       </div>
 
@@ -107,21 +114,19 @@
       </header>
 
       <section>
-        <h2>Paper</h2>
-        <ul>
-          <li>
-            <a href="South%20Korea%20SME%20Research.pdf" target="_blank">
-              South Korea SME Research
-            </a>
-          </li>
-        </ul>
-      </section>
+        <h2>Papers</h2>
 
-      <section>
-        <h2>Notes</h2>
-        <p class="meta">
-          This project uses monthly data on exports, firm size, and FX variables to study how SMEs and large firms respond differently to currency movements.
-        </p>
+        <div class="paper">
+          <a href="South%20Korea%20SME%20Research.pdf" target="_blank">
+            South Korea SME Research (PDF)
+          </a>
+          <p class="meta">
+            Studies how exchange-rate movements change the export shares of SMEs vs. large firms using monthly Korean export and FX data.
+          </p>
+        </div>
+
+        <!-- When you add more papers later, copy-paste another
+             <div class="paper">...</div> block here. -->
       </section>
     </main>
   </body>
