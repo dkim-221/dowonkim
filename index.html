@@ -1,20 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Dowon Kim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Simple built‑in minimal styling -->
+    <style>
+      :root {
+        --bg: #f7f7f7;
+        --card-bg: #ffffff;
+        --text: #222222;
+        --muted: #666666;
+        --accent: #1f2933;
+        --border: #e0e0e0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .page {
+        max-width: 720px;
+        width: 100%;
+        background: var(--card-bg);
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        padding: 32px 28px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      }
+
+      h1 {
+        font-size: 1.9rem;
+        margin: 0 0 4px;
+      }
+
+      .tagline {
+        font-size: 0.95rem;
+        color: var(--muted);
+        margin: 0 0 20px;
+      }
+
+      section {
+        margin-top: 20px;
+      }
+
+      h2 {
+        font-size: 1.05rem;
+        margin: 0 0 8px;
+      }
+
+      .section-note {
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin: 0 0 12px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--accent);
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        margin-top: 28px;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+    </style>
   </head>
   <body>
-    <h1>Dowon Kim</h1>
+    <main class="page">
+      <header>
+        <h1>Dowon Kim</h1>
+        <p class="tagline">
+          Economics student focusing on Korea's SME exports and applied macro.
+        </p>
+      </header>
 
-    <h2>Research Projects</h2>
-    <ul>
-      <li><a href="research-projects/korea-sme-exports/">Korea SME Exports</a></li>
-    </ul>
+      <section>
+        <h2>Research Projects</h2>
+        <p class="section-note">Independent work hosted as downloadable PDFs.</p>
+        <ul>
+          <li>
+            <a href="research-projects/korea-sme-exports/">
+              Korea SME Exports
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <h2>Economic News Journal</h2>
-    <ul>
-      <li><a href="economic-news-journal/">View journal</a></li>
-    </ul>
+      <section>
+        <h2>Economic News Journal</h2>
+        <p class="section-note">
+          Short weekly notes on data releases, policy decisions, and markets.
+        </p>
+        <ul>
+          <li>
+            <a href="economic-news-journal/">
+              View journal entries
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="footer">
+        Last updated Jan 2026.
+      </div>
+    </main>
   </body>
 </html>
