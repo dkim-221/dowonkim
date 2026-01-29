@@ -1,42 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Economic News Journal</title>
+    <meta charset="UTF-8" />
+    <title>Economic News Journal – Dowon Kim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --bg: #f7f7f7;
+        --card-bg: #ffffff;
+        --text: #222222;
+        --muted: #666666;
+        --accent: #1f2933;
+        --border: #e0e0e0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+
+      .page {
+        max-width: 720px;
+        width: 100%;
+        background: var(--card-bg);
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        padding: 32px 28px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      }
+
+      h1 {
+        font-size: 1.7rem;
+        margin: 0 0 6px;
+      }
+
+      .tagline {
+        font-size: 0.95rem;
+        color: var(--muted);
+        margin: 0 0 20px;
+      }
+
+      h2 {
+        font-size: 1.05rem;
+        margin: 18px 0 10px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--accent);
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .back {
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+      }
+
+      .meta {
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin: 0 0 14px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Economic News Journal</h1>
-    <p>Weekly journal tracking major macro data, policy moves, and market reactions.</p>
+    <main class="page">
+      <div class="back">
+        <a href="https://dkim-221.github.io/dowonkim/">
+          ← Back to Dowon Kim homepage
+        </a>
+      </div>
 
-<p><a href="https://dkim-221.github.io/dowonkim/">← Back to Dowon Kim homepage</a></p>
-
-    <h2>Entries (PDFs)</h2>
-    <ul>
-      <li>
-        <a href="Economic%20News%20Journal%20-%2018%20Jan%202026.pdf" target="_blank">
-          18 Jan 2026 – Economic News Journal
-        </a>
-      </li>
-      <li>
-        <a href="Economic%20News%20Journal%20-%2011%20Jan%202026.pdf" target="_blank">
-          11 Jan 2026 – Economic News Journal
-        </a>
-      </li>
-      <li>
-        <a href="Economic%20News%20Journal%20-%204%20Jan%202026.pdf" target="_blank">
-          4 Jan 2026 – Economic News Journal
-        </a>
-      </li>
-      <li>
-        <a href="Economic%20News%20Journal%20-%2028%20Dec%202025.pdf" target="_blank">
-          28 Dec 2025 – Economic News Journal
-        </a>
-      </li>
-      <li>
-        <a href="Economic%20News%20Journal%20-%2021%20Dec%202025.pdf" target="_blank">
-          21 Dec 2025 – Economic News Journal
-        </a>
-      </li>
-    </ul>
-  </body>
-</html>
+      <header>
+        <h1>Economic News Journal</h1>
+        <p class="tagline">
+          Weekly notes on major data releases, policy decisions, and market reactions.
+        </p>
+      </he
